@@ -57,46 +57,13 @@ body {
 }
 
 @font-face {
-  font-family: "Lora Italic";
-  src: url("../fonts/Lora-Italic-webfont.eot");
-  src: url("../fonts/Lora-Italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Lora-Italic-webfont.woff") format("woff"), url("../fonts/Lora-Italic-webfont.ttf") format("truetype"), url("../fonts/Lora-Italic-webfont.svg") format("svg");
+  font-family: "Georgia";
+  src: url("../fonts/Georgia-webfont.eot");
+  src: url("../fonts/Georgia-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Georgia-webfont.woff") format("woff"), url("../fonts/Georgia-webfont.ttf") format("truetype"), url("../fonts/Georgia-webfont.svg") format("svg");
 }
 
-@font-face {
-  font-family: "Roboto Black";
-  src: url("../fonts/Roboto-Black-webfont.eot");
-  src: url("../fonts/Roboto-Black-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Black-webfont.woff") format("woff"), url("../fonts/Roboto-Black-webfont.ttf") format("truetype"), url("../fonts/Roboto-Black-webfont.svg") format("svg");
-}
-
-@font-face {
-  font-family: "Roboto Medium";
-  src: url("../fonts/Roboto-Medium-webfont.eot");
-  src: url("../fonts/Roboto-Medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Medium-webfont.woff") format("woff"), url("../fonts/Roboto-Medium-webfont.ttf") format("truetype"), url("../fonts/Roboto-Medium-webfont.svg") format("svg");
-}
-
-@font-face {
-  font-family: "Roboto Light";
-  src: url("../fonts/Roboto-Light-webfont.eot");
-  src: url("../fonts/Roboto-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Light-webfont.woff") format("woff"), url("../fonts/Roboto-Light-webfont.ttf") format("truetype"), url("../fonts/Roboto-Light-webfont.svg") format("svg");
-}
-
-h1,
-ul {
-  color: #fff;
-  font-family: "Roboto Black", Arial, Helvetica, sans-serif;
-}
-
-h2,
-h4 {
-  color: #fff;
-  font-family: "Lora Italic", "Times New Roman", Times, serif;
-  font-style: italic;
-}
-
-p {
-  color: #fff;
-  font-family: "Roboto light", Arial, Helvetica, sans-serif;
-  line-height: 1.5;
+body {
+  font-family: "Georgia", "Times New Roman", Times, serif;
 }
 
 a {
