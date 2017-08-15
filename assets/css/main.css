@@ -52,10 +52,6 @@ table {
   border-spacing: 0;
 }
 
-body {
-  background: #009ea8;
-}
-
 @font-face {
   font-family: "Georgia";
   src: url("../fonts/Georgia-webfont.eot");
@@ -70,10 +66,25 @@ a {
   text-decoration: none;
 }
 
+.nav__main {
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  margin-top: 80px;
+  background: #e6e6e6;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1280px;
   width: 90%;
+}
+
+.header {
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  background: #000;
 }
 
 /*# sourceMappingURL=main.css.map */
