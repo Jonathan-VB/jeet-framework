@@ -18,3 +18,11 @@ To use:
 
 4. Alter base Sass and HTML files to suit the projects needs.
 5. Build your site!
+
+Project Specifics: Installing Jeet:
+1.  In your terminal:
+    - cd to project folder.
+    - npm install -D node-sass jeet
+    - paste
+        @import 'node_modules/jeet/scss/index';
+      somewhere within your Sass files (I just pasted it into the index.scss in the vendor folder). 
