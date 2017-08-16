@@ -1,9 +1,18 @@
 // 1.0 Colour palette.
 $mercury: #e6e6e6;
+$dusty-grey: #999;
+$silver: #ccc;
+$sunset-orange: #ff5443;
 
 $white: #fff;
 $black: #000;
 
 // 2.0 Colours currently being used on the site.
 $color-primary: $white;
+
 $color-ui-light-01: $mercury;
+$color-ui-light-02: $silver;
+
+$color-ui-dark-01: $dusty-grey;
+
+$color-ui-link-01: $sunset-orange;

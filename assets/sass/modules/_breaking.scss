@@ -1,3 +1,19 @@
 .breaking {
-  // height: 200vh;
+  border-top: 1px solid $color-ui-light-02;
+
+  &__header {
+    position: relative;
+    padding-top: 20px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 8px;
+      width: 120px;
+      display: block;
+      background-color: $black;
+    }
+  }
 }

@@ -52,6 +52,12 @@ table {
   border-spacing: 0;
 }
 
+.heading-link {
+  font-size: 12px;
+  margin-left: 10px;
+  color: #ff5443;
+}
+
 @font-face {
   font-family: "Georgia";
   src: url("../fonts/Georgia-webfont.eot");
@@ -60,6 +66,11 @@ table {
 
 body {
   font-family: "Georgia", "Times New Roman", Times, serif;
+}
+
+h3 {
+  font-size: 26px;
+  font-weight: 700;
 }
 
 a {
@@ -71,13 +82,25 @@ a {
   height: 50px;
   width: 100%;
   margin-top: 80px;
+  border-bottom: 1px solid #999;
   background: #e6e6e6;
 }
 
 .container {
-  margin: 0 auto;
+  width: auto;
   max-width: 1280px;
-  width: 90%;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.container::after {
+  content: '';
+  display: table;
+  clear: both;
 }
 
 .header {
@@ -85,6 +108,30 @@ a {
   height: 80px;
   width: 100%;
   background: #000;
+}
+
+.ad__banner {
+  padding-top: 200px;
+}
+
+.breaking {
+  border-top: 1px solid #ccc;
+}
+
+.breaking__header {
+  position: relative;
+  padding-top: 20px;
+}
+
+.breaking__header::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 8px;
+  width: 120px;
+  display: block;
+  background-color: #000;
 }
 
 /*# sourceMappingURL=main.css.map */
