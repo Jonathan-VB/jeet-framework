@@ -7,10 +7,18 @@
 
   &__image {
     @include column(2/5);
+
+    @include mq("tablet", max) {
+      @include stack();
+    }
   }
 
   &__details {
     @include column(3/5);
+
+    @include mq("tablet", max) {
+      @include stack();
+    }
   }
 }
 
