@@ -1,8 +1,32 @@
 // General global styles.
 
+
 // Anchor links.
 .heading-link {
   font-size: 12px;
   margin-left: 10px;
   color: $color-ui-link-01;
+
+  &:hover {
+    color: lighten($color-ui-link-01, 10%);
+  }
+}
+
+
+// Article category and time
+.article {
+  &__category {
+    margin-right: 10px;
+    color: $color-ui-link-02;
+    font-weight: 600;
+
+    &:hover {
+      color: lighten($color-ui-link-02, 15%);
+    }
+  }
+
+  &__time {
+    color: $color-ui-dark-01;
+    font-size: 12px;
+  }
 }
