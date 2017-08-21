@@ -62,10 +62,22 @@ table {
   color: #ff8276;
 }
 
+.article__title {
+  margin: 10px 0px;
+}
+
+.article__title a {
+  color: #000;
+}
+
+.article__title a:hover {
+  color: gray;
+}
+
 .article__category {
   margin-right: 10px;
   color: #4591b8;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .article__category:hover {
@@ -75,6 +87,20 @@ table {
 .article__time {
   color: #999;
   font-size: 12px;
+}
+
+.article__author {
+  color: #999;
+}
+
+.article__author span {
+  color: #ff5443;
+  font-weight: 700;
+}
+
+.article__excerpt {
+  margin-top: 10px;
+  color: #999;
 }
 
 @font-face {
@@ -396,17 +422,15 @@ a {
   height: 300px;
   width: 100%;
   margin-top: 15px;
-  background: red;
 }
 
-.top-story__image {
-  height: 100%;
-  background: blue;
+.top-story__image img {
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .top-story__details {
   height: 100%;
-  background: yellow;
 }
 
 /*# sourceMappingURL=main.css.map */

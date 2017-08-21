@@ -15,10 +15,22 @@
 
 // Article category and time
 .article {
+  &__title {
+    margin: 10px 0px;
+
+    a {
+      color: $black;
+
+      &:hover {
+        color: lighten($black, 50%);
+      }
+    }
+  }
+
   &__category {
     margin-right: 10px;
     color: $color-ui-link-02;
-    font-weight: 600;
+    font-weight: 700;
 
     &:hover {
       color: lighten($color-ui-link-02, 15%);
@@ -28,5 +40,19 @@
   &__time {
     color: $color-ui-dark-01;
     font-size: 12px;
+  }
+
+  &__author {
+    color: $color-ui-dark-01;
+
+    span {
+      color: $color-ui-highlight-01;
+      font-weight: 700;
+    }
+  }
+
+  &__excerpt {
+    margin-top: 10px;
+    color: $color-ui-dark-01;
   }
 }
