@@ -137,6 +137,89 @@ a {
   text-decoration: none;
 }
 
+/*  ==========================================================================
+  1. Column Layout
+    ========================================================================== */
+.nav__main {
+  width: auto;
+  max-width: 1280px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.nav__main::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.nav__main__date {
+  background: red;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 17.6%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+
+.nav__main__date::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.nav__main__date:last-child {
+  margin-right: 0%;
+}
+
+.nav__main__list {
+  background: blue;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 58.8%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+
+.nav__main__list::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.nav__main__list:last-child {
+  margin-right: 0%;
+}
+
+.nav__main__weather {
+  background: yellow;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 17.6%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+
+.nav__main__weather::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.nav__main__weather:last-child {
+  margin-right: 0%;
+}
+
+/*  ==========================================================================
+  2. Styles
+    ========================================================================== */
 .nav__main {
   position: fixed;
   height: 50px;
