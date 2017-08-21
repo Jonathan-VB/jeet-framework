@@ -2,22 +2,28 @@
   1. Column Layout
     ========================================================================== */
 
-.nav__main {
-  @include center(1280px, 0px);
+.nav__main__wrapper {
+  @include center(1280px, 40px);
 
-  &__date {
-    background: red;
-    @include column(1/5);
-  }
+  .nav__main {
 
-  &__list {
-    background: blue;
-    @include column(3/5);
-  }
+    &__date {
+      background: red;
+      @include column(1/5);
+      text-align: left;
+    }
 
-  &__weather {
-    background: yellow;
-    @include column(1/5);
+    &__list {
+      background: blue;
+      @include column(3/5, $gutter: 4);
+      text-align: center;
+    }
+
+    &__weather {
+      background: yellow;
+      @include column(1/5, $gutter: 4);
+      text-align: right;
+    }
   }
 }
 
@@ -33,4 +39,20 @@
   margin-top: 80px;
   border-bottom: 1px solid $color-ui-dark-01;
   background: $color-ui-light-01;
+  text-transform: uppercase;
+
+  &__date {
+    font-size: 12px;
+  }
+
+  &__list {
+    li {
+      display: inline-block;
+      font-size: 12px;
+    }
+  }
+
+  &__weather {
+    font-size: 12px;
+  }
 }

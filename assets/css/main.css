@@ -129,7 +129,9 @@ h4 {
   font-size: 12px;
 }
 
-p {
+p,
+ul,
+li {
   font-size: 14px;
 }
 
@@ -140,24 +142,24 @@ a {
 /*  ==========================================================================
   1. Column Layout
     ========================================================================== */
-.nav__main {
+.nav__main__wrapper {
   width: auto;
   max-width: 1280px;
   float: none;
   display: block;
   margin-right: auto;
   margin-left: auto;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
-.nav__main::after {
+.nav__main__wrapper::after {
   content: '';
   display: table;
   clear: both;
 }
 
-.nav__main__date {
+.nav__main__wrapper .nav__main__date {
   background: red;
   float: left;
   clear: none;
@@ -165,55 +167,58 @@ a {
   width: 17.6%;
   margin-left: 0%;
   margin-right: 3%;
+  text-align: left;
 }
 
-.nav__main__date::after {
+.nav__main__wrapper .nav__main__date::after {
   content: '';
   display: table;
   clear: both;
 }
 
-.nav__main__date:last-child {
+.nav__main__wrapper .nav__main__date:last-child {
   margin-right: 0%;
 }
 
-.nav__main__list {
+.nav__main__wrapper .nav__main__list {
   background: blue;
   float: left;
   clear: none;
   text-align: inherit;
-  width: 58.8%;
+  width: 58.4%;
   margin-left: 0%;
-  margin-right: 3%;
+  margin-right: 4%;
+  text-align: center;
 }
 
-.nav__main__list::after {
+.nav__main__wrapper .nav__main__list::after {
   content: '';
   display: table;
   clear: both;
 }
 
-.nav__main__list:last-child {
+.nav__main__wrapper .nav__main__list:last-child {
   margin-right: 0%;
 }
 
-.nav__main__weather {
+.nav__main__wrapper .nav__main__weather {
   background: yellow;
   float: left;
   clear: none;
   text-align: inherit;
-  width: 17.6%;
+  width: 16.8%;
   margin-left: 0%;
-  margin-right: 3%;
+  margin-right: 4%;
+  text-align: right;
 }
 
-.nav__main__weather::after {
+.nav__main__wrapper .nav__main__weather::after {
   content: '';
   display: table;
   clear: both;
 }
 
-.nav__main__weather:last-child {
+.nav__main__wrapper .nav__main__weather:last-child {
   margin-right: 0%;
 }
 
@@ -227,6 +232,20 @@ a {
   margin-top: 80px;
   border-bottom: 1px solid #999;
   background: #e6e6e6;
+  text-transform: uppercase;
+}
+
+.nav__main__date {
+  font-size: 12px;
+}
+
+.nav__main__list li {
+  display: inline-block;
+  font-size: 12px;
+}
+
+.nav__main__weather {
+  font-size: 12px;
 }
 
 .container {
