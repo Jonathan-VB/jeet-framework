@@ -14,7 +14,6 @@
     }
 
     &__list {
-      background: blue;
       @include column(3/5, $gutter: 4);
       text-align: center;
     }
@@ -34,25 +33,42 @@
 
 .nav__main {
   position: fixed;
-  height: 50px;
   width: 100%;
   margin-top: 80px;
   border-bottom: 1px solid $color-ui-dark-01;
   background: $color-ui-light-01;
   text-transform: uppercase;
+  font-family: 'Arial';
+  padding: 15px 0px;
 
   &__date {
-    font-size: 12px;
+    font-size: 11px;
   }
 
   &__list {
     li {
       display: inline-block;
-      font-size: 12px;
+      margin-right: 10px;
+      font-size: 11px;
+
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+
+    a {
+      padding-bottom: 14px;
+      color: $color-ui-dark-02;
+
+      &:hover,
+      &:active,
+      &focus {
+        border-bottom: 4px solid $black;
+      }
     }
   }
 
   &__weather {
-    font-size: 12px;
+    font-size: 11px;
   }
 }

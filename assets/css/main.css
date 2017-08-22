@@ -181,7 +181,6 @@ a {
 }
 
 .nav__main__wrapper .nav__main__list {
-  background: blue;
   float: left;
   clear: none;
   text-align: inherit;
@@ -227,25 +226,40 @@ a {
     ========================================================================== */
 .nav__main {
   position: fixed;
-  height: 50px;
   width: 100%;
   margin-top: 80px;
   border-bottom: 1px solid #999;
   background: #e6e6e6;
   text-transform: uppercase;
+  font-family: 'Arial';
+  padding: 15px 0px;
 }
 
 .nav__main__date {
-  font-size: 12px;
+  font-size: 11px;
 }
 
 .nav__main__list li {
   display: inline-block;
-  font-size: 12px;
+  margin-right: 10px;
+  font-size: 11px;
+}
+
+.nav__main__list li:last-child {
+  margin-right: 0px;
+}
+
+.nav__main__list a {
+  padding-bottom: 14px;
+  color: #666;
+}
+
+.nav__main__list a:hover, .nav__main__list a:active, .nav__main__list afocus {
+  border-bottom: 4px solid #000;
 }
 
 .nav__main__weather {
-  font-size: 12px;
+  font-size: 11px;
 }
 
 .container {
