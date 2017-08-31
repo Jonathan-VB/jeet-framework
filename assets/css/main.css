@@ -164,7 +164,7 @@ a {
   float: left;
   clear: none;
   text-align: inherit;
-  width: 17.6%;
+  width: 22.75%;
   margin-left: 0%;
   margin-right: 3%;
   text-align: left;
@@ -180,11 +180,31 @@ a {
   margin-right: 0%;
 }
 
+@media only screen and (max-width: 839px) {
+  .nav__main__wrapper .nav__main__date {
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: -3%;
+    margin-left: 0%;
+    margin-right: 3%;
+    display: none;
+  }
+  .nav__main__wrapper .nav__main__date::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  .nav__main__wrapper .nav__main__date:last-child {
+    margin-right: 0%;
+  }
+}
+
 .nav__main__wrapper .nav__main__list {
   float: left;
   clear: none;
   text-align: inherit;
-  width: 58.8%;
+  width: 61.375%;
   margin-left: 0%;
   margin-right: 3%;
   text-align: center;
@@ -200,11 +220,30 @@ a {
   margin-right: 0%;
 }
 
+@media only screen and (max-width: 839px) {
+  .nav__main__wrapper .nav__main__list {
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 87.125%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  .nav__main__wrapper .nav__main__list::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  .nav__main__wrapper .nav__main__list:last-child {
+    margin-right: 0%;
+  }
+}
+
 .nav__main__wrapper .nav__main__weather {
   float: left;
   clear: none;
   text-align: inherit;
-  width: 17.6%;
+  width: 9.875%;
   margin-left: 0%;
   margin-right: 3%;
   text-align: right;
@@ -243,7 +282,7 @@ a {
 
 .nav__main__list li {
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 8px;
   font-size: 11px;
 }
 
@@ -258,6 +297,18 @@ a {
 
 .nav__main__list a:hover, .nav__main__list a:active, .nav__main__list afocus {
   border-bottom: 4px solid #000;
+}
+
+@media only screen and (max-width: 1023px) {
+  .nav__main__list .hide-item__two {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 909px) {
+  .nav__main__list .hide-item__one {
+    display: none;
+  }
 }
 
 .nav__main__weather {

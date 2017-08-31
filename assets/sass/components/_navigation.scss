@@ -8,17 +8,26 @@
   .nav__main {
 
     &__date {
-      @include column(1/5);
+      @include column(2/8);
       text-align: left;
+
+      @include mq("break-840", max) {
+        @include column(0/8);
+        display: none;
+      }
     }
 
     &__list {
-      @include column(3/5);
+      @include column(5/8);
       text-align: center;
+
+      @include mq("break-840", max) {
+        @include column(7/8);
+      }
     }
 
     &__weather {
-      @include column(1/5);
+      @include column(1/8);
       text-align: right;
     }
   }
@@ -49,7 +58,7 @@
   &__list {
     li {
       display: inline-block;
-      margin-right: 10px;
+      margin-right: 8px;
       font-size: 11px;
 
       &:last-child {
@@ -65,6 +74,18 @@
       &:active,
       &focus {
         border-bottom: 4px solid $black;
+      }
+    }
+
+    .hide-item__two {
+      @include mq("tablet-wide", max) {
+        display: none;
+      }
+    }
+
+    .hide-item__one {
+      @include mq("break-910", max) {
+        display: none;
       }
     }
   }
