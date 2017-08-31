@@ -347,6 +347,24 @@ a {
   clear: both;
 }
 
+@media only screen and (max-width: 767px) {
+  .container {
+    width: auto;
+    max-width: 1280px;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .container::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
 .header {
   position: fixed;
   height: 80px;
@@ -484,8 +502,179 @@ a {
 /*  ==========================================================================
   1. Column Layout
     ========================================================================== */
+.topic-columns {
+  width: auto;
+  max-width: 1280px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.topic-columns::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.topic-columns--col-04 {
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 65.66667%;
+  margin-left: 0%;
+  margin-right: 3%;
+  height: 400px;
+  background: red;
+}
+
+.topic-columns--col-04::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.topic-columns--col-04:last-child {
+  margin-right: 0%;
+}
+
+@media only screen and (max-width: 909px) {
+  .topic-columns--col-04 {
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .topic-columns--col-04:first-child {
+    margin-left: auto;
+  }
+  .topic-columns--col-04:last-child {
+    margin-right: auto;
+  }
+}
+
+.topic-columns--col-04--nested {
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 65.66667%;
+  margin-left: 0%;
+  margin-right: 3%;
+  height: 200px;
+  background: yellow;
+}
+
+.topic-columns--col-04--nested::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.topic-columns--col-04--nested:last-child {
+  margin-right: 0%;
+}
+
+@media only screen and (max-width: 767px) {
+  .topic-columns--col-04--nested {
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .topic-columns--col-04--nested:first-child {
+    margin-left: auto;
+  }
+  .topic-columns--col-04--nested:last-child {
+    margin-right: auto;
+  }
+}
+
+.topic-columns--col-02 {
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 31.33333%;
+  margin-left: 0%;
+  margin-right: 3%;
+  height: 500px;
+  background: blue;
+}
+
+.topic-columns--col-02::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.topic-columns--col-02:last-child {
+  margin-right: 0%;
+}
+
+@media only screen and (max-width: 909px) {
+  .topic-columns--col-02 {
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+  .topic-columns--col-02:first-child {
+    margin-left: auto;
+  }
+  .topic-columns--col-02:last-child {
+    margin-right: auto;
+  }
+}
+
+.topic-columns--col-02--nested {
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 31.33333%;
+  margin-left: 0%;
+  margin-right: 3%;
+  height: 200px;
+  background: purple;
+}
+
+.topic-columns--col-02--nested::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.topic-columns--col-02--nested:last-child {
+  margin-right: 0%;
+}
+
+@media only screen and (max-width: 767px) {
+  .topic-columns--col-02--nested {
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+  }
+  .topic-columns--col-02--nested:first-child {
+    margin-left: auto;
+  }
+  .topic-columns--col-02--nested:last-child {
+    margin-right: auto;
+  }
+}
+
 /*  ==========================================================================
-  2. Styles
+  2. Styles - Main Topic
     ========================================================================== */
 .topic {
   margin: 30px 0;
@@ -603,7 +792,6 @@ a {
   2. Styles
     ========================================================================== */
 .top-story {
-  height: 300px;
   width: 100%;
   margin-top: 15px;
 }
