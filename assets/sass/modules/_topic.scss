@@ -7,8 +7,6 @@
 
     &--col-04 {
       @include column(4/6);
-      height: 400px;
-      background: red;
 
       @include mq("break-910", max) {
         @include stack();
@@ -16,8 +14,6 @@
 
       &--nested {
         @include column(3/6);
-        height: 200px;
-        background: yellow;
 
         @include mq("tablet", max) {
           @include stack();
@@ -37,8 +33,6 @@
 
       &--nested {
         @include column(3/6);
-        height: 200px;
-        background: purple;
 
         @include mq("tablet", max) {
           @include stack();
@@ -73,4 +67,8 @@
       background-color: $black;
     }
   }
+}
+
+.topic__header__title {
+  margin-bottom: 15px;
 }
