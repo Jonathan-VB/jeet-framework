@@ -56,4 +56,12 @@
     margin-top: 10px;
     color: $color-ui-dark-01;
   }
+
+  &__image {
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
 }
