@@ -8,26 +8,26 @@
   .nav__main {
 
     &__date {
-      @include column(2/8);
+      @include column(2/10);
       text-align: left;
 
       @include mq("break-840", max) {
-        @include column(0/8);
+        @include column(0/10);
         display: none;
       }
     }
 
     &__list {
-      @include column(5/8);
+      @include column(6/10);
       text-align: center;
 
       @include mq("break-840", max) {
-        @include column(7/8);
+        @include column(8/10);
       }
     }
 
     &__weather {
-      @include column(1/8);
+      @include column(2/10);
       text-align: right;
     }
   }
