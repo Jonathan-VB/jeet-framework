@@ -1,5 +1,6 @@
 .container {
   @include center(1280px, 40px);
+  margin-bottom: 80px;
 
   @include mq("tablet", max) {
     @include center(1280px, 15px);

@@ -23,8 +23,6 @@
 
     &--col-02 {
       @include column(2/6);
-      height: 500px;
-      background: blue;
 
       @include mq("break-910", max) {
         @include stack();
@@ -48,6 +46,12 @@
 /*  ==========================================================================
   2. Styles - Main Topic
     ========================================================================== */
+
+.topic-columns--col-02--nested {
+  @include mq("tablet", max) {
+    margin-bottom: 15px;
+  }
+}
 
 .topic {
   margin: 30px 0;
