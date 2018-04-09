@@ -5,6 +5,7 @@
   .topic-columns {
     @include center(1280px, 0px);
     padding-top: 30px;
+    padding-bottom: 30px;
 
     &--col-04 {
       @include column(4/6);

@@ -16,6 +16,35 @@
       @include stack();
     }
   }
+
+  .breaking__item--half-width {
+    @include column(1/2, $cycle: 2);
+    margin-bottom: 20px;
+
+    @include mq("phone-wide", max) {
+      @include stack();
+    }
+
+    .breaking__item--half-width__image {
+      @include column(2/5);
+      background: red;
+      height: 100px;
+
+      @include mq("tablet", max) {
+        @include stack();
+        margin-bottom: 10px;
+      }
+    }
+
+    .breaking__item--half-width__content {
+      @include column(3/5);
+      background: blue;
+
+      @include mq("tablet", max) {
+        @include stack();
+      }
+    }
+  }
 }
 
 
@@ -41,6 +70,12 @@
       background-color: $black;
     }
   }
+
+  &__header--no-top-tile {
+    &::after {
+      height: 0px;
+    }
+  }
 }
 
 .breaking__item {
@@ -56,5 +91,13 @@
         color: lighten($black, 50%);
       }
     }
+  }
+}
+
+.breaking__item__title--large-text {
+  font-size: 20px;
+
+  @include mq("tablet", max) {
+    font-size: 14px;
   }
 }

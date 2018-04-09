@@ -499,6 +499,130 @@ a {
   }
 }
 
+.breaking__list .breaking__item--half-width {
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 48.5%;
+  margin-left: 0%;
+  margin-right: 3%;
+  margin-bottom: 20px;
+}
+
+.breaking__list .breaking__item--half-width::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.breaking__list .breaking__item--half-width:nth-child(n) {
+  margin-right: 3%;
+  float: left;
+  clear: none;
+}
+
+.breaking__list .breaking__item--half-width:nth-child(2n) {
+  margin-right: 0%;
+  float: right;
+}
+
+.breaking__list .breaking__item--half-width:nth-child(2n + 1) {
+  clear: both;
+}
+
+@media only screen and (max-width: 479px) {
+  .breaking__list .breaking__item--half-width {
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .breaking__list .breaking__item--half-width:first-child {
+    margin-left: auto;
+  }
+  .breaking__list .breaking__item--half-width:last-child {
+    margin-right: auto;
+  }
+}
+
+.breaking__list .breaking__item--half-width .breaking__item--half-width__image {
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 38.2%;
+  margin-left: 0%;
+  margin-right: 3%;
+  background: red;
+  height: 100px;
+}
+
+.breaking__list .breaking__item--half-width .breaking__item--half-width__image::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.breaking__list .breaking__item--half-width .breaking__item--half-width__image:last-child {
+  margin-right: 0%;
+}
+
+@media only screen and (max-width: 767px) {
+  .breaking__list .breaking__item--half-width .breaking__item--half-width__image {
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+  }
+  .breaking__list .breaking__item--half-width .breaking__item--half-width__image:first-child {
+    margin-left: auto;
+  }
+  .breaking__list .breaking__item--half-width .breaking__item--half-width__image:last-child {
+    margin-right: auto;
+  }
+}
+
+.breaking__list .breaking__item--half-width .breaking__item--half-width__content {
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 58.8%;
+  margin-left: 0%;
+  margin-right: 3%;
+  background: blue;
+}
+
+.breaking__list .breaking__item--half-width .breaking__item--half-width__content::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.breaking__list .breaking__item--half-width .breaking__item--half-width__content:last-child {
+  margin-right: 0%;
+}
+
+@media only screen and (max-width: 767px) {
+  .breaking__list .breaking__item--half-width .breaking__item--half-width__content {
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .breaking__list .breaking__item--half-width .breaking__item--half-width__content:first-child {
+    margin-left: auto;
+  }
+  .breaking__list .breaking__item--half-width .breaking__item--half-width__content:last-child {
+    margin-right: auto;
+  }
+}
+
 /*  ==========================================================================
   2. Styles
     ========================================================================== */
@@ -522,6 +646,10 @@ a {
   background-color: #000;
 }
 
+.breaking__header--no-top-tile::after {
+  height: 0px;
+}
+
 .breaking__item {
   margin: 10px 0;
 }
@@ -538,6 +666,16 @@ a {
   color: gray;
 }
 
+.breaking__item__title--large-text {
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  .breaking__item__title--large-text {
+    font-size: 14px;
+  }
+}
+
 /*  ==========================================================================
   1. Column Layout
     ========================================================================== */
@@ -551,6 +689,7 @@ a {
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .topic-columns::after {
