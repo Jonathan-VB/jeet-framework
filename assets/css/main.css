@@ -555,7 +555,7 @@ a {
   margin-left: 0%;
   margin-right: 3%;
   background: red;
-  height: 100px;
+  height: 120px;
 }
 
 .breaking__list .breaking__item--half-width .breaking__item--half-width__image::after {
@@ -584,6 +584,13 @@ a {
   .breaking__list .breaking__item--half-width .breaking__item--half-width__image:last-child {
     margin-right: auto;
   }
+}
+
+.breaking__list .breaking__item--half-width .breaking__item--half-width__image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .breaking__list .breaking__item--half-width .breaking__item--half-width__content {
@@ -644,6 +651,10 @@ a {
   width: 120px;
   display: block;
   background-color: #000;
+}
+
+.breaking__header__title {
+  margin-bottom: 15px;
 }
 
 .breaking__header--no-top-tile::after {
