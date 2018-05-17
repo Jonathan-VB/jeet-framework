@@ -27,7 +27,6 @@
 
     .breaking__item--half-width__image {
       @include column(2/5);
-      background: red;
       height: 120px;
 
       @include mq("tablet", max) {
@@ -44,7 +43,6 @@
 
     .breaking__item--half-width__content {
       @include column(3/5);
-      background: blue;
 
       @include mq("tablet", max) {
         @include stack();

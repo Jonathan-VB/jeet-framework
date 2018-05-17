@@ -554,7 +554,6 @@ a {
   width: 38.2%;
   margin-left: 0%;
   margin-right: 3%;
-  background: red;
   height: 120px;
 }
 
@@ -600,7 +599,6 @@ a {
   width: 58.8%;
   margin-left: 0%;
   margin-right: 3%;
-  background: blue;
 }
 
 .breaking__list .breaking__item--half-width .breaking__item--half-width__content::after {
