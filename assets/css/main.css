@@ -403,6 +403,75 @@ a {
   }
 }
 
+/*  ==========================================================================
+  1. Column Layout
+    ========================================================================== */
+.header__left {
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 31.33333%;
+  margin-left: 0%;
+  margin-right: 3%;
+  background: red;
+  height: 20px;
+}
+
+.header__left::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.header__left:last-child {
+  margin-right: 0%;
+}
+
+.header__center {
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 31.33333%;
+  margin-left: 0%;
+  margin-right: 3%;
+  background: purple;
+  height: 20px;
+}
+
+.header__center::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.header__center:last-child {
+  margin-right: 0%;
+}
+
+.header__right {
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 31.33333%;
+  margin-left: 0%;
+  margin-right: 3%;
+  background: green;
+  height: 20px;
+}
+
+.header__right::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.header__right:last-child {
+  margin-right: 0%;
+}
+
+/*  ==========================================================================
+  2. Styles
+    ========================================================================== */
 .header {
   position: fixed;
   height: 80px;
