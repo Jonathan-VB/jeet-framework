@@ -413,8 +413,6 @@ a {
   width: 31.33333%;
   margin-left: 0%;
   margin-right: 3%;
-  background: red;
-  height: 20px;
 }
 
 .header__left::after {
@@ -434,8 +432,6 @@ a {
   width: 31.33333%;
   margin-left: 0%;
   margin-right: 3%;
-  background: purple;
-  height: 20px;
 }
 
 .header__center::after {
@@ -455,8 +451,6 @@ a {
   width: 31.33333%;
   margin-left: 0%;
   margin-right: 3%;
-  background: green;
-  height: 20px;
 }
 
 .header__right::after {
@@ -478,6 +472,44 @@ a {
   width: 100%;
   background: #000;
   z-index: 1;
+}
+
+.header__container {
+  width: auto;
+  max-width: 1280px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 20px;
+}
+
+.header__container::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.header__left {
+  background: red;
+  height: 20px;
+}
+
+.header__center {
+  background: purple;
+  height: 30px;
+}
+
+.header__center img {
+  width: 100%;
+  height: auto;
+}
+
+.header__right {
+  background: green;
+  height: 20px;
 }
 
 .logo {
