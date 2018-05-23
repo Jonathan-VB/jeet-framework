@@ -34,6 +34,7 @@
 
 .header__left {
   background: red;
+  display: flex;
   height: 20px;
 }
 
@@ -57,4 +58,23 @@
 
 .ad__banner {
   padding-top: 200px;
+}
+
+.icon-text {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+  font-family: Arial,sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: $white;
+
+  &:last-child {
+    margin-right: 0px;
+  }
+
+  span {
+    margin-right: 10px;
+    font-size: 25px;
+  }
 }

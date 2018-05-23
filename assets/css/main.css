@@ -494,6 +494,8 @@ a {
 
 .header__left {
   background: red;
+  display: -ms-flexbox;
+  display: flex;
   height: 20px;
 }
 
@@ -517,6 +519,27 @@ a {
 
 .ad__banner {
   padding-top: 200px;
+}
+
+.icon-text {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-right: 30px;
+  font-family: Arial,sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.icon-text:last-child {
+  margin-right: 0px;
+}
+
+.icon-text span {
+  margin-right: 10px;
+  font-size: 25px;
 }
 
 /*  ==========================================================================
