@@ -481,8 +481,12 @@ a {
   display: block;
   margin-right: auto;
   margin-left: auto;
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
   margin-top: 20px;
 }
 
@@ -535,6 +539,10 @@ a {
 
 .icon-text:last-child {
   margin-right: 0px;
+}
+
+.icon-text:hover, .icon-text:focus, .icon-text:active {
+  color: #666;
 }
 
 .icon-text span {

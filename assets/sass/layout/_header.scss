@@ -28,7 +28,9 @@
 }
 
 .header__container {
-  @include center(1280px);
+  @include center(1280px, 40px);
+  display: flex;
+  align-items: center;
   margin-top: 20px;
 }
 
@@ -71,6 +73,12 @@
 
   &:last-child {
     margin-right: 0px;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color-ui-dark-02;
   }
 
   span {
