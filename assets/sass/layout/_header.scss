@@ -41,17 +41,15 @@
 }
 
 .header__center {
-  background: purple;
-
   img {
     width: 100%;
-    height: auto;
+    height: 33px;
   }
 }
 
 .header__right {
   background: green;
-  height: 20px;
+  height: 40px;
 }
 
 .logo {
@@ -85,4 +83,9 @@
     margin-right: 10px;
     font-size: 25px;
   }
+}
+
+.icon__search {
+  width: 20px;
+  height: 20px;
 }
