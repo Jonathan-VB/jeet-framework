@@ -177,6 +177,25 @@ a {
   text-decoration: none;
 }
 
+.btn-wrapper {
+  max-height: 40px;
+  background: red;
+  border: 1px solid #fff;
+}
+
+.btn--black-bg-white-border {
+  padding: 12px 0 13px;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  height: 12px;
+  box-sizing: content-box;
+  color: #fff;
+  text-transform: uppercase;
+  width: 86px;
+  background: #000;
+  color: #fff;
+}
+
 /*  ==========================================================================
   1. Column Layout
     ========================================================================== */
@@ -310,6 +329,12 @@ a {
   color: #666;
   text-transform: uppercase;
   font-family: 'Arial';
+}
+
+@media only screen and (max-width: 839px) {
+  .nav__main {
+    margin-top: 60px;
+  }
 }
 
 .nav__main__date {
@@ -474,6 +499,12 @@ a {
   z-index: 1;
 }
 
+@media only screen and (max-width: 839px) {
+  .header {
+    height: 60px;
+  }
+}
+
 .header__container {
   width: auto;
   max-width: 1280px;
@@ -497,7 +528,6 @@ a {
 }
 
 .header__left {
-  background: red;
   display: -ms-flexbox;
   display: flex;
   height: 20px;
@@ -511,6 +541,12 @@ a {
 .header__right {
   background: green;
   height: 40px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
 }
 
 .logo {

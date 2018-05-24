@@ -50,6 +50,10 @@
   text-transform: uppercase;
   font-family: 'Arial';
 
+  @include mq("break-840", max) {
+    margin-top: 60px;
+  }
+
   &__date {
     padding-top: 3px;
     font-size: 11px;

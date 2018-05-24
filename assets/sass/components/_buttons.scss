@@ -1,0 +1,18 @@
+.btn-wrapper {
+  max-height: 40px;
+  background: red;
+  border: 1px solid $white;
+}
+
+.btn--black-bg-white-border {
+  padding: 12px 0 13px;
+border: 1px solid #fff;
+border-radius: 2px;
+height: 12px;
+box-sizing: content-box;
+    color: #fff;
+    text-transform: uppercase;
+    width: 86px;
+  background: $black;
+  color: $white;
+}

@@ -25,6 +25,10 @@
   width: 100%;
   background: $black;
   z-index: 1;
+
+  @include mq("break-840", max) {
+    height: 60px;
+  }
 }
 
 .header__container {
@@ -35,7 +39,6 @@
 }
 
 .header__left {
-  background: red;
   display: flex;
   height: 20px;
 }
@@ -50,6 +53,9 @@
 .header__right {
   background: green;
   height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 .logo {
